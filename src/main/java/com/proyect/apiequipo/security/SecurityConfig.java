@@ -35,9 +35,6 @@ public class SecurityConfig {
 
 	@Bean
 	public AuthenticationManager authenticationManager(HttpSecurity http) throws Exception {
-
-		// OBTENEMOS UNA REFERENCIA A ESTA CLASE DESDE LOS OBJETOS COMPARTIDOS DE SPRING
-		// SECURITY
 		AuthenticationManagerBuilder authenticationManagerBuilder = http
 				.getSharedObject(AuthenticationManagerBuilder.class);
 
@@ -50,27 +47,22 @@ public class SecurityConfig {
 
 	@Bean
 	public SecurityFilterChain securityFilterChain(HttpSecurity http) throws Exception {
-		http.csrf().disable()// DESABILITAMOS LA CONFIGURACIÓN DE CSRF YA QUE NO ES NECESARIA EN NUESTRA API
-				// REST
-				.exceptionHandling()// VAMOS A MANEJAR LAS EXCEPCIONES A TRAVÉS DE LOS DOS SIGUIENTES MECANISMOS
-				.authenticationEntryPoint(jwtAuthenticationEntryPoint).accessDeniedHandler(jwtAccessDeniedHandler)// MANEJADOR
-				// DE
-				// ACCESO
-				// DENEGADO
-				.and().sessionManagement()// GESTIONAMOS LA SESIÓN
-				.sessionCreationPolicy(SessionCreationPolicy.STATELESS)// LA POLÍTICA LA ESTABLECEMOS SIN ESTADO, PARA
-				// QUE LA SESION NO SE GESTIONE DENTRO DEL
-				// SERVIDOR, YA QUE SE MANTENDRÁ CON EL PROPIO
-				// TOKEN DEL USER
+		http.csrf().disable()
+
+				.exceptionHandling().authenticationEntryPoint(jwtAuthenticationEntryPoint)
+				.accessDeniedHandler(jwtAccessDeniedHandler)
+
+				.and().sessionManagement().sessionCreationPolicy(SessionCreationPolicy.STATELESS)
+
 				.and().cors().configurationSource(request -> {
 					var cors = new CorsConfiguration();
-					// Para desarrollo local, cambiar en produccion
+
 					cors.setAllowedOrigins(List.of("*"));
 					cors.setAllowedMethods(List.of("GET", "POST", "PUT", "DELETE", "OPTIONS"));
 					cors.setAllowedHeaders(List.of("*"));
 					return cors;
 				}).and().authorizeHttpRequests()
-				.requestMatchers("/jugadores/**","/convocados/**", "/convocados/{nombre}", "convocados/partido/{id}")
+				.requestMatchers("/jugadores/**", "/convocados/**", "/convocados/{nombre}", "convocados/partido/{id}")
 				.hasAnyRole("ADMIN", "REGISTEDUSER").requestMatchers("/auth/register/admin").hasRole("ADMIN")
 				.anyRequest().authenticated();
 
@@ -83,8 +75,8 @@ public class SecurityConfig {
 
 	@Bean
 	public WebSecurityCustomizer webSecurityCustomizer() {
-		return (web) -> web.ignoring().requestMatchers("/auth/register", "/auth/login",
-				"/convocados/**", "/partidos/**", "/equipos/**");
+		return (web) -> web.ignoring().requestMatchers("/auth/register", "/auth/login", "/convocados/**",
+				"/partidos/**", "/equipos/**","/auth/register/admin");
 	}
 
 }

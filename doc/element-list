@@ -1,0 +1,12 @@
+com.proyect.apiequipo
+com.proyect.apiequipo.config
+com.proyect.apiequipo.controller
+com.proyect.apiequipo.domain
+com.proyect.apiequipo.exception
+com.proyect.apiequipo.repository
+com.proyect.apiequipo.security
+com.proyect.apiequipo.security.errorhandling
+com.proyect.apiequipo.security.jwt
+com.proyect.apiequipo.service
+com.proyect.apiequipo.user.dto
+com.proyect.apiequipo.user.model
