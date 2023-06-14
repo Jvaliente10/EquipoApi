@@ -1,0 +1,329 @@
+2023-06-09 13:01:24,044 INFO o.s.b.StartupInfoLogger [main] Starting ApiequipoApplication using Java 17.0.6 with PID 21324 (C:\Users\leoni\Desktop\José\2ºDAM\ProyectoFinal\apiequipo\target\classes started by leoni in C:\Users\leoni\Desktop\José\2ºDAM\ProyectoFinal\apiequipo)
+2023-06-09 13:01:24,047 INFO o.s.b.SpringApplication [main] No active profile set, falling back to 1 default profile: "default"
+2023-06-09 13:01:24,944 INFO o.s.d.r.c.RepositoryConfigurationDelegate [main] Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2023-06-09 13:01:25,054 INFO o.s.d.r.c.RepositoryConfigurationDelegate [main] Finished Spring Data repository scanning in 96 ms. Found 5 JPA repository interfaces.
+2023-06-09 13:01:25,897 INFO o.s.b.w.e.t.TomcatWebServer [main] Tomcat initialized with port(s): 8081 (http)
+2023-06-09 13:01:25,910 INFO o.a.j.l.DirectJDKLog [main] Initializing ProtocolHandler ["http-nio-8081"]
+2023-06-09 13:01:25,912 INFO o.a.j.l.DirectJDKLog [main] Starting service [Tomcat]
+2023-06-09 13:01:25,912 INFO o.a.j.l.DirectJDKLog [main] Starting Servlet engine: [Apache Tomcat/10.1.8]
+2023-06-09 13:01:26,047 INFO o.a.j.l.DirectJDKLog [main] Initializing Spring embedded WebApplicationContext
+2023-06-09 13:01:26,049 INFO o.s.b.w.s.c.ServletWebServerApplicationContext [main] Root WebApplicationContext: initialization completed in 1935 ms
+2023-06-09 13:01:26,259 INFO o.h.j.i.u.LogHelper [main] HHH000204: Processing PersistenceUnitInfo [name: default]
+2023-06-09 13:01:26,333 INFO o.h.Version [main] HHH000412: Hibernate ORM core version 6.1.7.Final
+2023-06-09 13:01:26,634 INFO c.z.h.HikariDataSource [main] HikariPool-1 - Starting...
+2023-06-09 13:01:26,998 INFO c.z.h.p.HikariPool [main] HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@1073c664
+2023-06-09 13:01:27,004 INFO c.z.h.HikariDataSource [main] HikariPool-1 - Start completed.
+2023-06-09 13:01:27,059 INFO o.h.e.j.d.i.DialectFactoryImpl [main] HHH000400: Using dialect: org.hibernate.dialect.MySQLDialect
+2023-06-09 13:01:28,163 INFO o.h.e.t.j.p.i.JtaPlatformInitiator [main] HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2023-06-09 13:01:28,172 INFO o.s.o.j.AbstractEntityManagerFactoryBean [main] Initialized JPA EntityManagerFactory for persistence unit 'default'
+2023-06-09 13:01:28,775 WARN o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration [main] spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2023-06-09 13:01:29,095 INFO o.s.s.w.DefaultSecurityFilterChain [main] Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@5b8ba1d2, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@57fb6900, org.springframework.security.web.context.SecurityContextHolderFilter@5319efc0, org.springframework.security.web.header.HeaderWriterFilter@35a81281, org.springframework.web.filter.CorsFilter@1eda853f, org.springframework.security.web.authentication.logout.LogoutFilter@1ac30be4, com.proyect.apiequipo.security.jwt.JwtAuthenticationFilter@63e40188, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@3618486e, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@110f66e3, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@3f0751b0, org.springframework.security.web.session.SessionManagementFilter@694dc99b, org.springframework.security.web.access.ExceptionTranslationFilter@4c5e123d, org.springframework.security.web.access.intercept.AuthorizationFilter@2e845f1c]
+2023-06-09 13:01:29,101 WARN o.s.s.c.a.w.b.WebSecurity [main] You are asking Spring Security to ignore Mvc [pattern='/auth/register']. This is not recommended -- please use permitAll via HttpSecurity#authorizeHttpRequests instead.
+2023-06-09 13:01:29,102 INFO o.s.s.w.DefaultSecurityFilterChain [main] Will not secure Mvc [pattern='/auth/register']
+2023-06-09 13:01:29,103 WARN o.s.s.c.a.w.b.WebSecurity [main] You are asking Spring Security to ignore Mvc [pattern='/auth/login']. This is not recommended -- please use permitAll via HttpSecurity#authorizeHttpRequests instead.
+2023-06-09 13:01:29,104 INFO o.s.s.w.DefaultSecurityFilterChain [main] Will not secure Mvc [pattern='/auth/login']
+2023-06-09 13:01:29,104 WARN o.s.s.c.a.w.b.WebSecurity [main] You are asking Spring Security to ignore Mvc [pattern='/convocados/**']. This is not recommended -- please use permitAll via HttpSecurity#authorizeHttpRequests instead.
+2023-06-09 13:01:29,105 INFO o.s.s.w.DefaultSecurityFilterChain [main] Will not secure Mvc [pattern='/convocados/**']
+2023-06-09 13:01:29,105 WARN o.s.s.c.a.w.b.WebSecurity [main] You are asking Spring Security to ignore Mvc [pattern='/partidos/**']. This is not recommended -- please use permitAll via HttpSecurity#authorizeHttpRequests instead.
+2023-06-09 13:01:29,105 INFO o.s.s.w.DefaultSecurityFilterChain [main] Will not secure Mvc [pattern='/partidos/**']
+2023-06-09 13:01:29,105 WARN o.s.s.c.a.w.b.WebSecurity [main] You are asking Spring Security to ignore Mvc [pattern='/equipos/**']. This is not recommended -- please use permitAll via HttpSecurity#authorizeHttpRequests instead.
+2023-06-09 13:01:29,105 INFO o.s.s.w.DefaultSecurityFilterChain [main] Will not secure Mvc [pattern='/equipos/**']
+2023-06-09 13:01:29,358 INFO o.a.j.l.DirectJDKLog [main] Starting ProtocolHandler ["http-nio-8081"]
+2023-06-09 13:01:29,393 INFO o.s.b.w.e.t.TomcatWebServer [main] Tomcat started on port(s): 8081 (http) with context path ''
+2023-06-09 13:01:29,403 INFO o.s.b.StartupInfoLogger [main] Started ApiequipoApplication in 5.917 seconds (process running for 6.342)
+2023-06-09 13:01:46,196 INFO o.a.j.l.DirectJDKLog [http-nio-8081-exec-1] Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-06-09 13:01:46,197 INFO o.s.w.s.FrameworkServlet [http-nio-8081-exec-1] Initializing Servlet 'dispatcherServlet'
+2023-06-09 13:01:46,203 INFO o.s.w.s.FrameworkServlet [http-nio-8081-exec-1] Completed initialization in 4 ms
+2023-06-09 13:01:46,471 INFO c.p.a.c.JugadorController [http-nio-8081-exec-2] Inicio getJugadores
+2023-06-09 13:01:46,579 INFO c.p.a.c.JugadorController [http-nio-8081-exec-2] Fin getJugadores
+2023-06-09 13:01:49,455 INFO c.p.a.c.JugadorController [http-nio-8081-exec-4] Inicio getJugadorPorId
+2023-06-09 13:01:49,465 INFO c.p.a.c.JugadorController [http-nio-8081-exec-4] Fin getJugadorPorId
+2023-06-09 13:02:15,853 INFO c.p.a.c.JugadorController [http-nio-8081-exec-6] Inicio getJugadores
+2023-06-09 13:02:15,888 INFO c.p.a.c.JugadorController [http-nio-8081-exec-6] Fin getJugadores
+2023-06-09 13:02:17,117 INFO c.p.a.c.JugadorController [http-nio-8081-exec-8] Inicio getJugadorPorId
+2023-06-09 13:02:17,129 INFO c.p.a.c.JugadorController [http-nio-8081-exec-8] Fin getJugadorPorId
+2023-06-09 13:02:56,256 INFO c.p.a.c.JugadorController [http-nio-8081-exec-9] Inicio getJugadores
+2023-06-09 13:02:56,287 INFO c.p.a.c.JugadorController [http-nio-8081-exec-9] Fin getJugadores
+2023-06-09 13:05:36,018 INFO c.p.a.c.JugadorController [http-nio-8081-exec-10] Inicio getJugadores
+2023-06-09 13:05:36,055 INFO c.p.a.c.JugadorController [http-nio-8081-exec-10] Fin getJugadores
+2023-06-09 13:09:16,823 INFO c.p.a.c.JugadorController [http-nio-8081-exec-5] Inicio getJugadores
+2023-06-09 13:09:16,868 INFO c.p.a.c.JugadorController [http-nio-8081-exec-5] Fin getJugadores
+2023-06-09 13:12:54,900 INFO c.p.a.c.JugadorController [http-nio-8081-exec-2] Inicio getJugadores
+2023-06-09 13:12:54,923 INFO c.p.a.c.JugadorController [http-nio-8081-exec-2] Fin getJugadores
+2023-06-09 13:13:05,025 INFO c.p.a.c.JugadorController [http-nio-8081-exec-5] Inicio getJugadores
+2023-06-09 13:13:05,048 INFO c.p.a.c.JugadorController [http-nio-8081-exec-5] Fin getJugadores
+2023-06-09 13:14:43,336 INFO c.p.a.c.JugadorController [http-nio-8081-exec-7] Inicio getJugadores
+2023-06-09 13:14:43,357 INFO c.p.a.c.JugadorController [http-nio-8081-exec-7] Fin getJugadores
+2023-06-09 13:14:44,798 INFO c.p.a.c.JugadorController [http-nio-8081-exec-8] Inicio getJugadorPorId
+2023-06-09 13:14:44,805 INFO c.p.a.c.JugadorController [http-nio-8081-exec-8] Fin getJugadorPorId
+2023-06-09 13:16:09,109 INFO c.p.a.c.JugadorController [http-nio-8081-exec-1] Inicio getJugadores
+2023-06-09 13:16:09,128 INFO c.p.a.c.JugadorController [http-nio-8081-exec-1] Fin getJugadores
+2023-06-09 13:16:10,492 INFO c.p.a.c.JugadorController [http-nio-8081-exec-5] Inicio getJugadorPorId
+2023-06-09 13:16:10,502 INFO c.p.a.c.JugadorController [http-nio-8081-exec-5] Fin getJugadorPorId
+2023-06-09 13:16:14,960 INFO c.p.a.c.JugadorController [http-nio-8081-exec-6] Inicio getJugadores
+2023-06-09 13:16:14,981 INFO c.p.a.c.JugadorController [http-nio-8081-exec-6] Fin getJugadores
+2023-06-09 13:16:16,971 INFO c.p.a.c.JugadorController [http-nio-8081-exec-2] Inicio getJugadorPorId
+2023-06-09 13:16:16,980 INFO c.p.a.c.JugadorController [http-nio-8081-exec-2] Fin getJugadorPorId
+2023-06-09 13:18:41,507 INFO c.p.a.c.JugadorController [http-nio-8081-exec-3] Inicio getJugadores
+2023-06-09 13:18:41,529 INFO c.p.a.c.JugadorController [http-nio-8081-exec-3] Fin getJugadores
+2023-06-09 13:18:43,162 INFO c.p.a.c.JugadorController [http-nio-8081-exec-7] Inicio getJugadorPorId
+2023-06-09 13:18:43,167 INFO c.p.a.c.JugadorController [http-nio-8081-exec-7] Fin getJugadorPorId
+2023-06-09 13:18:44,610 INFO c.p.a.c.JugadorController [http-nio-8081-exec-8] Inicio getJugadorPorId
+2023-06-09 13:18:44,615 INFO c.p.a.c.JugadorController [http-nio-8081-exec-8] Fin getJugadorPorId
+2023-06-09 13:20:27,541 INFO c.p.a.c.JugadorController [http-nio-8081-exec-1] Inicio getJugadores
+2023-06-09 13:20:27,559 INFO c.p.a.c.JugadorController [http-nio-8081-exec-1] Fin getJugadores
+2023-06-09 13:20:29,070 INFO c.p.a.c.JugadorController [http-nio-8081-exec-5] Inicio getJugadorPorId
+2023-06-09 13:20:29,076 INFO c.p.a.c.JugadorController [http-nio-8081-exec-5] Fin getJugadorPorId
+2023-06-09 13:21:19,105 INFO c.p.a.c.JugadorController [http-nio-8081-exec-2] Inicio getJugadores
+2023-06-09 13:21:19,121 INFO c.p.a.c.JugadorController [http-nio-8081-exec-2] Fin getJugadores
+2023-06-09 13:21:20,973 INFO c.p.a.c.JugadorController [http-nio-8081-exec-1] Inicio getJugadorPorId
+2023-06-09 13:21:20,980 INFO c.p.a.c.JugadorController [http-nio-8081-exec-1] Fin getJugadorPorId
+2023-06-09 13:23:01,715 INFO c.p.a.c.JugadorController [http-nio-8081-exec-8] Inicio getJugadores
+2023-06-09 13:23:01,735 INFO c.p.a.c.JugadorController [http-nio-8081-exec-8] Fin getJugadores
+2023-06-09 13:25:00,087 INFO c.p.a.c.JugadorController [http-nio-8081-exec-1] Inicio getJugadores
+2023-06-09 13:25:00,109 INFO c.p.a.c.JugadorController [http-nio-8081-exec-1] Fin getJugadores
+2023-06-09 13:25:27,649 INFO c.p.a.c.JugadorController [http-nio-8081-exec-5] Inicio getJugadores
+2023-06-09 13:25:27,668 INFO c.p.a.c.JugadorController [http-nio-8081-exec-5] Fin getJugadores
+2023-06-09 13:25:29,437 INFO c.p.a.c.ConvocadoController [http-nio-8081-exec-4] Inicio convocados por nombre
+2023-06-09 13:25:29,444 INFO c.p.a.c.ConvocadoController [http-nio-8081-exec-4] Fin convocados por nombre
+2023-06-09 13:25:31,883 INFO c.p.a.c.JugadorController [http-nio-8081-exec-6] Inicio getJugadores
+2023-06-09 13:25:31,900 INFO c.p.a.c.JugadorController [http-nio-8081-exec-6] Fin getJugadores
+2023-06-09 13:25:33,282 INFO c.p.a.c.ConvocadoController [http-nio-8081-exec-2] Inicio convocados por nombre
+2023-06-09 13:25:33,290 INFO c.p.a.c.ConvocadoController [http-nio-8081-exec-2] Fin convocados por nombre
+2023-06-09 13:26:27,277 INFO c.p.a.c.JugadorController [http-nio-8081-exec-1] Inicio getJugadores
+2023-06-09 13:26:27,296 INFO c.p.a.c.JugadorController [http-nio-8081-exec-1] Fin getJugadores
+2023-06-09 13:31:17,729 INFO c.p.a.c.JugadorController [http-nio-8081-exec-3] Inicio getJugadores
+2023-06-09 13:31:17,746 INFO c.p.a.c.JugadorController [http-nio-8081-exec-3] Fin getJugadores
+2023-06-09 13:33:38,637 INFO c.p.a.c.JugadorController [http-nio-8081-exec-6] Inicio getJugadores
+2023-06-09 13:33:38,657 INFO c.p.a.c.JugadorController [http-nio-8081-exec-6] Fin getJugadores
+2023-06-09 13:39:20,155 INFO c.p.a.c.JugadorController [http-nio-8081-exec-10] Inicio getJugadores
+2023-06-09 13:39:20,172 INFO c.p.a.c.JugadorController [http-nio-8081-exec-10] Fin getJugadores
+2023-06-09 13:39:21,886 INFO c.p.a.c.JugadorController [http-nio-8081-exec-9] Inicio getJugadorPorId
+2023-06-09 13:39:21,893 INFO c.p.a.c.JugadorController [http-nio-8081-exec-9] Fin getJugadorPorId
+2023-06-09 13:39:25,248 WARN o.s.w.s.h.AbstractHandlerExceptionResolver [http-nio-8081-exec-3] Resolved [org.springframework.web.HttpRequestMethodNotSupportedException: Request method 'PUT' is not supported]
+2023-06-09 13:40:50,019 INFO c.p.a.c.ConvocadoController [http-nio-8081-exec-8] Inicio convocados por nombre
+2023-06-09 13:40:50,027 INFO c.p.a.c.ConvocadoController [http-nio-8081-exec-8] Fin convocados por nombre
+2023-06-09 13:40:53,648 INFO c.p.a.c.JugadorController [http-nio-8081-exec-10] Inicio getJugadores
+2023-06-09 13:40:53,661 INFO c.p.a.c.JugadorController [http-nio-8081-exec-10] Fin getJugadores
+2023-06-09 13:41:00,348 INFO c.p.a.c.PartidoController [http-nio-8081-exec-1] Inicio getPartidos
+2023-06-09 13:41:00,408 INFO c.p.a.c.PartidoController [http-nio-8081-exec-1] Fin getPartidos
+2023-06-09 13:41:02,753 INFO c.p.a.c.PartidoController [http-nio-8081-exec-5] Inicio getPartidos
+2023-06-09 13:41:02,807 INFO c.p.a.c.PartidoController [http-nio-8081-exec-5] Fin getPartidos
+2023-06-09 13:41:04,473 INFO c.p.a.c.PartidoController [http-nio-8081-exec-4] Inicio getPartidos
+2023-06-09 13:41:04,530 INFO c.p.a.c.PartidoController [http-nio-8081-exec-4] Fin getPartidos
+2023-06-09 13:41:05,981 INFO c.p.a.c.PartidoController [http-nio-8081-exec-8] Inicio getPartidos
+2023-06-09 13:41:06,048 INFO c.p.a.c.PartidoController [http-nio-8081-exec-8] Fin getPartidos
+2023-06-09 13:41:07,587 INFO c.p.a.c.PartidoController [http-nio-8081-exec-2] Inicio getPartidos
+2023-06-09 13:41:07,642 INFO c.p.a.c.PartidoController [http-nio-8081-exec-2] Fin getPartidos
+2023-06-09 13:41:08,970 INFO c.p.a.c.PartidoController [http-nio-8081-exec-1] Inicio getPartidos
+2023-06-09 13:41:09,031 INFO c.p.a.c.PartidoController [http-nio-8081-exec-1] Fin getPartidos
+2023-06-09 13:41:10,598 INFO c.p.a.c.PartidoController [http-nio-8081-exec-5] Inicio getPartidos
+2023-06-09 13:41:10,656 INFO c.p.a.c.PartidoController [http-nio-8081-exec-5] Fin getPartidos
+2023-06-09 13:41:12,335 INFO c.p.a.c.PartidoController [http-nio-8081-exec-4] Inicio getPartidos
+2023-06-09 13:41:12,380 INFO c.p.a.c.PartidoController [http-nio-8081-exec-4] Fin getPartidos
+2023-06-09 13:41:14,290 INFO c.p.a.c.PartidoController [http-nio-8081-exec-8] Inicio getPartidos
+2023-06-09 13:41:14,341 INFO c.p.a.c.PartidoController [http-nio-8081-exec-8] Fin getPartidos
+2023-06-09 13:45:42,088 INFO o.s.b.StartupInfoLogger [main] Starting ApiequipoApplication using Java 17.0.6 with PID 21772 (C:\Users\leoni\Desktop\José\2ºDAM\ProyectoFinal\apiequipo\target\classes started by leoni in C:\Users\leoni\Desktop\José\2ºDAM\ProyectoFinal\apiequipo)
+2023-06-09 13:45:42,093 INFO o.s.b.SpringApplication [main] No active profile set, falling back to 1 default profile: "default"
+2023-06-09 13:45:43,135 INFO o.s.d.r.c.RepositoryConfigurationDelegate [main] Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2023-06-09 13:45:43,290 INFO o.s.d.r.c.RepositoryConfigurationDelegate [main] Finished Spring Data repository scanning in 132 ms. Found 5 JPA repository interfaces.
+2023-06-09 13:45:44,432 INFO o.s.b.w.e.t.TomcatWebServer [main] Tomcat initialized with port(s): 8081 (http)
+2023-06-09 13:45:44,464 INFO o.a.j.l.DirectJDKLog [main] Initializing ProtocolHandler ["http-nio-8081"]
+2023-06-09 13:45:44,472 INFO o.a.j.l.DirectJDKLog [main] Starting service [Tomcat]
+2023-06-09 13:45:44,474 INFO o.a.j.l.DirectJDKLog [main] Starting Servlet engine: [Apache Tomcat/10.1.8]
+2023-06-09 13:45:44,658 INFO o.a.j.l.DirectJDKLog [main] Initializing Spring embedded WebApplicationContext
+2023-06-09 13:45:44,661 INFO o.s.b.w.s.c.ServletWebServerApplicationContext [main] Root WebApplicationContext: initialization completed in 2487 ms
+2023-06-09 13:45:44,953 INFO o.h.j.i.u.LogHelper [main] HHH000204: Processing PersistenceUnitInfo [name: default]
+2023-06-09 13:45:45,051 INFO o.h.Version [main] HHH000412: Hibernate ORM core version 6.1.7.Final
+2023-06-09 13:45:45,505 INFO c.z.h.HikariDataSource [main] HikariPool-1 - Starting...
+2023-06-09 13:45:46,084 INFO c.z.h.p.HikariPool [main] HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@fd4459b
+2023-06-09 13:45:46,090 INFO c.z.h.HikariDataSource [main] HikariPool-1 - Start completed.
+2023-06-09 13:45:46,166 INFO o.h.e.j.d.i.DialectFactoryImpl [main] HHH000400: Using dialect: org.hibernate.dialect.MySQLDialect
+2023-06-09 13:45:47,609 INFO o.h.e.t.j.p.i.JtaPlatformInitiator [main] HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2023-06-09 13:45:47,620 INFO o.s.o.j.AbstractEntityManagerFactoryBean [main] Initialized JPA EntityManagerFactory for persistence unit 'default'
+2023-06-09 13:45:48,476 WARN o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration [main] spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2023-06-09 13:45:48,888 INFO o.s.s.w.DefaultSecurityFilterChain [main] Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@35bb3fea, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@7f82a71f, org.springframework.security.web.context.SecurityContextHolderFilter@65a01901, org.springframework.security.web.header.HeaderWriterFilter@1503f434, org.springframework.web.filter.CorsFilter@7a0df38e, org.springframework.security.web.authentication.logout.LogoutFilter@6a887649, com.proyect.apiequipo.security.jwt.JwtAuthenticationFilter@5a08d301, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@77e64a46, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@1b89debc, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@64821706, org.springframework.security.web.session.SessionManagementFilter@3618486e, org.springframework.security.web.access.ExceptionTranslationFilter@2c6553c6, org.springframework.security.web.access.intercept.AuthorizationFilter@1eda853f]
+2023-06-09 13:45:48,893 WARN o.s.s.c.a.w.b.WebSecurity [main] You are asking Spring Security to ignore Mvc [pattern='/auth/register']. This is not recommended -- please use permitAll via HttpSecurity#authorizeHttpRequests instead.
+2023-06-09 13:45:48,894 INFO o.s.s.w.DefaultSecurityFilterChain [main] Will not secure Mvc [pattern='/auth/register']
+2023-06-09 13:45:48,895 WARN o.s.s.c.a.w.b.WebSecurity [main] You are asking Spring Security to ignore Mvc [pattern='/auth/login']. This is not recommended -- please use permitAll via HttpSecurity#authorizeHttpRequests instead.
+2023-06-09 13:45:48,895 INFO o.s.s.w.DefaultSecurityFilterChain [main] Will not secure Mvc [pattern='/auth/login']
+2023-06-09 13:45:48,895 WARN o.s.s.c.a.w.b.WebSecurity [main] You are asking Spring Security to ignore Mvc [pattern='/convocados/**']. This is not recommended -- please use permitAll via HttpSecurity#authorizeHttpRequests instead.
+2023-06-09 13:45:48,896 INFO o.s.s.w.DefaultSecurityFilterChain [main] Will not secure Mvc [pattern='/convocados/**']
+2023-06-09 13:45:48,896 WARN o.s.s.c.a.w.b.WebSecurity [main] You are asking Spring Security to ignore Mvc [pattern='/partidos/**']. This is not recommended -- please use permitAll via HttpSecurity#authorizeHttpRequests instead.
+2023-06-09 13:45:48,896 INFO o.s.s.w.DefaultSecurityFilterChain [main] Will not secure Mvc [pattern='/partidos/**']
+2023-06-09 13:45:48,897 WARN o.s.s.c.a.w.b.WebSecurity [main] You are asking Spring Security to ignore Mvc [pattern='/equipos/**']. This is not recommended -- please use permitAll via HttpSecurity#authorizeHttpRequests instead.
+2023-06-09 13:45:48,897 INFO o.s.s.w.DefaultSecurityFilterChain [main] Will not secure Mvc [pattern='/equipos/**']
+2023-06-09 13:45:49,162 INFO o.a.j.l.DirectJDKLog [main] Starting ProtocolHandler ["http-nio-8081"]
+2023-06-09 13:45:49,196 INFO o.s.b.w.e.t.TomcatWebServer [main] Tomcat started on port(s): 8081 (http) with context path ''
+2023-06-09 13:45:49,208 INFO o.s.b.StartupInfoLogger [main] Started ApiequipoApplication in 7.791 seconds (process running for 8.293)
+2023-06-09 13:51:21,281 INFO o.a.j.l.DirectJDKLog [http-nio-8081-exec-1] Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-06-09 13:51:21,283 INFO o.s.w.s.FrameworkServlet [http-nio-8081-exec-1] Initializing Servlet 'dispatcherServlet'
+2023-06-09 13:51:21,286 INFO o.s.w.s.FrameworkServlet [http-nio-8081-exec-1] Completed initialization in 2 ms
+2023-06-09 13:51:21,368 INFO c.p.a.s.j.JwtProvider [http-nio-8081-exec-1] Error con el token JWT signature does not match locally computed signature. JWT validity cannot be asserted and should not be trusted.
+2023-06-09 13:51:58,202 INFO c.p.a.c.EquipoController [http-nio-8081-exec-3] Inicio getEquipos
+2023-06-09 13:51:58,269 INFO c.p.a.c.EquipoController [http-nio-8081-exec-3] Fin getEquipos
+2023-06-09 13:56:07,184 INFO o.s.b.StartupInfoLogger [main] Starting ApiequipoApplication using Java 17.0.6 with PID 7396 (C:\Users\leoni\Desktop\José\2ºDAM\ProyectoFinal\apiequipo\target\classes started by leoni in C:\Users\leoni\Desktop\José\2ºDAM\ProyectoFinal\apiequipo)
+2023-06-09 13:56:07,189 INFO o.s.b.SpringApplication [main] No active profile set, falling back to 1 default profile: "default"
+2023-06-09 13:56:08,064 INFO o.s.d.r.c.RepositoryConfigurationDelegate [main] Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2023-06-09 13:56:08,160 INFO o.s.d.r.c.RepositoryConfigurationDelegate [main] Finished Spring Data repository scanning in 87 ms. Found 5 JPA repository interfaces.
+2023-06-09 13:56:09,065 INFO o.s.b.w.e.t.TomcatWebServer [main] Tomcat initialized with port(s): 8081 (http)
+2023-06-09 13:56:09,080 INFO o.a.j.l.DirectJDKLog [main] Initializing ProtocolHandler ["http-nio-8081"]
+2023-06-09 13:56:09,082 INFO o.a.j.l.DirectJDKLog [main] Starting service [Tomcat]
+2023-06-09 13:56:09,083 INFO o.a.j.l.DirectJDKLog [main] Starting Servlet engine: [Apache Tomcat/10.1.8]
+2023-06-09 13:56:09,260 INFO o.a.j.l.DirectJDKLog [main] Initializing Spring embedded WebApplicationContext
+2023-06-09 13:56:09,266 INFO o.s.b.w.s.c.ServletWebServerApplicationContext [main] Root WebApplicationContext: initialization completed in 2016 ms
+2023-06-09 13:56:09,543 INFO o.h.j.i.u.LogHelper [main] HHH000204: Processing PersistenceUnitInfo [name: default]
+2023-06-09 13:56:09,613 INFO o.h.Version [main] HHH000412: Hibernate ORM core version 6.1.7.Final
+2023-06-09 13:56:09,909 INFO c.z.h.HikariDataSource [main] HikariPool-1 - Starting...
+2023-06-09 13:56:10,273 INFO c.z.h.p.HikariPool [main] HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@213012a0
+2023-06-09 13:56:10,278 INFO c.z.h.HikariDataSource [main] HikariPool-1 - Start completed.
+2023-06-09 13:56:10,338 INFO o.h.e.j.d.i.DialectFactoryImpl [main] HHH000400: Using dialect: org.hibernate.dialect.MySQLDialect
+2023-06-09 13:56:11,452 INFO o.h.e.t.j.p.i.JtaPlatformInitiator [main] HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2023-06-09 13:56:11,461 INFO o.s.o.j.AbstractEntityManagerFactoryBean [main] Initialized JPA EntityManagerFactory for persistence unit 'default'
+2023-06-09 13:56:12,163 WARN o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration [main] spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2023-06-09 13:56:12,507 INFO o.s.s.w.DefaultSecurityFilterChain [main] Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@27ada0e8, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@62fa4a88, org.springframework.security.web.context.SecurityContextHolderFilter@40612056, org.springframework.security.web.header.HeaderWriterFilter@219ec4b6, org.springframework.web.filter.CorsFilter@4b6942a0, org.springframework.security.web.authentication.logout.LogoutFilter@3aac31b7, com.proyect.apiequipo.security.jwt.JwtAuthenticationFilter@439d649c, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@518ed9b4, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@4a15d5f5, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@64641998, org.springframework.security.web.session.SessionManagementFilter@1503f434, org.springframework.security.web.access.ExceptionTranslationFilter@37a0c3c6, org.springframework.security.web.access.intercept.AuthorizationFilter@48b1b469]
+2023-06-09 13:56:12,511 WARN o.s.s.c.a.w.b.WebSecurity [main] You are asking Spring Security to ignore Mvc [pattern='/auth/register']. This is not recommended -- please use permitAll via HttpSecurity#authorizeHttpRequests instead.
+2023-06-09 13:56:12,512 INFO o.s.s.w.DefaultSecurityFilterChain [main] Will not secure Mvc [pattern='/auth/register']
+2023-06-09 13:56:12,512 WARN o.s.s.c.a.w.b.WebSecurity [main] You are asking Spring Security to ignore Mvc [pattern='/auth/login']. This is not recommended -- please use permitAll via HttpSecurity#authorizeHttpRequests instead.
+2023-06-09 13:56:12,513 INFO o.s.s.w.DefaultSecurityFilterChain [main] Will not secure Mvc [pattern='/auth/login']
+2023-06-09 13:56:12,513 WARN o.s.s.c.a.w.b.WebSecurity [main] You are asking Spring Security to ignore Mvc [pattern='/convocados/**']. This is not recommended -- please use permitAll via HttpSecurity#authorizeHttpRequests instead.
+2023-06-09 13:56:12,514 INFO o.s.s.w.DefaultSecurityFilterChain [main] Will not secure Mvc [pattern='/convocados/**']
+2023-06-09 13:56:12,514 WARN o.s.s.c.a.w.b.WebSecurity [main] You are asking Spring Security to ignore Mvc [pattern='/partidos/**']. This is not recommended -- please use permitAll via HttpSecurity#authorizeHttpRequests instead.
+2023-06-09 13:56:12,514 INFO o.s.s.w.DefaultSecurityFilterChain [main] Will not secure Mvc [pattern='/partidos/**']
+2023-06-09 13:56:12,514 WARN o.s.s.c.a.w.b.WebSecurity [main] You are asking Spring Security to ignore Mvc [pattern='/equipos/**']. This is not recommended -- please use permitAll via HttpSecurity#authorizeHttpRequests instead.
+2023-06-09 13:56:12,514 INFO o.s.s.w.DefaultSecurityFilterChain [main] Will not secure Mvc [pattern='/equipos/**']
+2023-06-09 13:56:12,762 INFO o.a.j.l.DirectJDKLog [main] Starting ProtocolHandler ["http-nio-8081"]
+2023-06-09 13:56:12,813 INFO o.s.b.w.e.t.TomcatWebServer [main] Tomcat started on port(s): 8081 (http) with context path ''
+2023-06-09 13:56:12,832 INFO o.s.b.StartupInfoLogger [main] Started ApiequipoApplication in 6.225 seconds (process running for 6.735)
+2023-06-09 13:56:16,635 INFO o.a.j.l.DirectJDKLog [http-nio-8081-exec-1] Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-06-09 13:56:16,636 INFO o.s.w.s.FrameworkServlet [http-nio-8081-exec-1] Initializing Servlet 'dispatcherServlet'
+2023-06-09 13:56:16,638 INFO o.s.w.s.FrameworkServlet [http-nio-8081-exec-1] Completed initialization in 2 ms
+2023-06-09 13:56:16,905 INFO c.p.a.c.JugadorController [http-nio-8081-exec-1] Inicio getJugadores
+2023-06-09 13:56:16,996 INFO c.p.a.c.JugadorController [http-nio-8081-exec-1] Fin getJugadores
+2023-06-09 13:56:53,699 INFO c.p.a.s.j.JwtProvider [http-nio-8081-exec-4] Error con el token JWT signature does not match locally computed signature. JWT validity cannot be asserted and should not be trusted.
+2023-06-09 13:58:08,478 INFO o.s.b.StartupInfoLogger [main] Starting ApiequipoApplication using Java 17.0.6 with PID 14824 (C:\Users\leoni\Desktop\José\2ºDAM\ProyectoFinal\apiequipo\target\classes started by leoni in C:\Users\leoni\Desktop\José\2ºDAM\ProyectoFinal\apiequipo)
+2023-06-09 13:58:08,481 INFO o.s.b.SpringApplication [main] No active profile set, falling back to 1 default profile: "default"
+2023-06-09 13:58:09,384 INFO o.s.d.r.c.RepositoryConfigurationDelegate [main] Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2023-06-09 13:58:09,493 INFO o.s.d.r.c.RepositoryConfigurationDelegate [main] Finished Spring Data repository scanning in 96 ms. Found 5 JPA repository interfaces.
+2023-06-09 13:58:10,337 INFO o.s.b.w.e.t.TomcatWebServer [main] Tomcat initialized with port(s): 8081 (http)
+2023-06-09 13:58:10,351 INFO o.a.j.l.DirectJDKLog [main] Initializing ProtocolHandler ["http-nio-8081"]
+2023-06-09 13:58:10,353 INFO o.a.j.l.DirectJDKLog [main] Starting service [Tomcat]
+2023-06-09 13:58:10,353 INFO o.a.j.l.DirectJDKLog [main] Starting Servlet engine: [Apache Tomcat/10.1.8]
+2023-06-09 13:58:10,492 INFO o.a.j.l.DirectJDKLog [main] Initializing Spring embedded WebApplicationContext
+2023-06-09 13:58:10,494 INFO o.s.b.w.s.c.ServletWebServerApplicationContext [main] Root WebApplicationContext: initialization completed in 1952 ms
+2023-06-09 13:58:10,711 INFO o.h.j.i.u.LogHelper [main] HHH000204: Processing PersistenceUnitInfo [name: default]
+2023-06-09 13:58:10,773 INFO o.h.Version [main] HHH000412: Hibernate ORM core version 6.1.7.Final
+2023-06-09 13:58:11,060 INFO c.z.h.HikariDataSource [main] HikariPool-1 - Starting...
+2023-06-09 13:58:11,446 INFO c.z.h.p.HikariPool [main] HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@fd4459b
+2023-06-09 13:58:11,449 INFO c.z.h.HikariDataSource [main] HikariPool-1 - Start completed.
+2023-06-09 13:58:11,521 INFO o.h.e.j.d.i.DialectFactoryImpl [main] HHH000400: Using dialect: org.hibernate.dialect.MySQLDialect
+2023-06-09 13:58:12,670 INFO o.h.e.t.j.p.i.JtaPlatformInitiator [main] HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2023-06-09 13:58:12,679 INFO o.s.o.j.AbstractEntityManagerFactoryBean [main] Initialized JPA EntityManagerFactory for persistence unit 'default'
+2023-06-09 13:58:13,382 WARN o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration [main] spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2023-06-09 13:58:13,713 INFO o.s.s.w.DefaultSecurityFilterChain [main] Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@342a5b57, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@5e781b4f, org.springframework.security.web.context.SecurityContextHolderFilter@6ddc817f, org.springframework.security.web.header.HeaderWriterFilter@2f541f60, org.springframework.web.filter.CorsFilter@1b89debc, org.springframework.security.web.authentication.logout.LogoutFilter@518ed9b4, com.proyect.apiequipo.security.jwt.JwtAuthenticationFilter@5a08d301, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@78c91d2a, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@7ec729be, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@7305191e, org.springframework.security.web.session.SessionManagementFilter@401b7226, org.springframework.security.web.access.ExceptionTranslationFilter@2b33f7a0, org.springframework.security.web.access.intercept.AuthorizationFilter@110f66e3]
+2023-06-09 13:58:13,734 WARN o.s.s.c.a.w.b.WebSecurity [main] You are asking Spring Security to ignore Mvc [pattern='/jugadores/**']. This is not recommended -- please use permitAll via HttpSecurity#authorizeHttpRequests instead.
+2023-06-09 13:58:13,734 INFO o.s.s.w.DefaultSecurityFilterChain [main] Will not secure Mvc [pattern='/jugadores/**']
+2023-06-09 13:58:13,735 WARN o.s.s.c.a.w.b.WebSecurity [main] You are asking Spring Security to ignore Mvc [pattern='/auth/register']. This is not recommended -- please use permitAll via HttpSecurity#authorizeHttpRequests instead.
+2023-06-09 13:58:13,735 INFO o.s.s.w.DefaultSecurityFilterChain [main] Will not secure Mvc [pattern='/auth/register']
+2023-06-09 13:58:13,736 WARN o.s.s.c.a.w.b.WebSecurity [main] You are asking Spring Security to ignore Mvc [pattern='/auth/login']. This is not recommended -- please use permitAll via HttpSecurity#authorizeHttpRequests instead.
+2023-06-09 13:58:13,736 INFO o.s.s.w.DefaultSecurityFilterChain [main] Will not secure Mvc [pattern='/auth/login']
+2023-06-09 13:58:13,736 WARN o.s.s.c.a.w.b.WebSecurity [main] You are asking Spring Security to ignore Mvc [pattern='/convocados/**']. This is not recommended -- please use permitAll via HttpSecurity#authorizeHttpRequests instead.
+2023-06-09 13:58:13,737 INFO o.s.s.w.DefaultSecurityFilterChain [main] Will not secure Mvc [pattern='/convocados/**']
+2023-06-09 13:58:13,738 WARN o.s.s.c.a.w.b.WebSecurity [main] You are asking Spring Security to ignore Mvc [pattern='/partidos/**']. This is not recommended -- please use permitAll via HttpSecurity#authorizeHttpRequests instead.
+2023-06-09 13:58:13,738 INFO o.s.s.w.DefaultSecurityFilterChain [main] Will not secure Mvc [pattern='/partidos/**']
+2023-06-09 13:58:13,738 WARN o.s.s.c.a.w.b.WebSecurity [main] You are asking Spring Security to ignore Mvc [pattern='/equipos/**']. This is not recommended -- please use permitAll via HttpSecurity#authorizeHttpRequests instead.
+2023-06-09 13:58:13,738 INFO o.s.s.w.DefaultSecurityFilterChain [main] Will not secure Mvc [pattern='/equipos/**']
+2023-06-09 13:58:14,027 INFO o.a.j.l.DirectJDKLog [main] Starting ProtocolHandler ["http-nio-8081"]
+2023-06-09 13:58:14,065 INFO o.s.b.w.e.t.TomcatWebServer [main] Tomcat started on port(s): 8081 (http) with context path ''
+2023-06-09 13:58:14,076 INFO o.s.b.StartupInfoLogger [main] Started ApiequipoApplication in 6.156 seconds (process running for 6.603)
+2023-06-09 13:58:18,683 INFO o.a.j.l.DirectJDKLog [http-nio-8081-exec-1] Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-06-09 13:58:18,685 INFO o.s.w.s.FrameworkServlet [http-nio-8081-exec-1] Initializing Servlet 'dispatcherServlet'
+2023-06-09 13:58:18,687 INFO o.s.w.s.FrameworkServlet [http-nio-8081-exec-1] Completed initialization in 1 ms
+2023-06-09 13:58:25,022 INFO c.p.a.s.j.JwtProvider [http-nio-8081-exec-3] Error con el token JWT signature does not match locally computed signature. JWT validity cannot be asserted and should not be trusted.
+2023-06-09 13:59:51,933 INFO o.s.b.StartupInfoLogger [main] Starting ApiequipoApplication using Java 17.0.6 with PID 1980 (C:\Users\leoni\Desktop\José\2ºDAM\ProyectoFinal\apiequipo\target\classes started by leoni in C:\Users\leoni\Desktop\José\2ºDAM\ProyectoFinal\apiequipo)
+2023-06-09 13:59:51,938 INFO o.s.b.SpringApplication [main] No active profile set, falling back to 1 default profile: "default"
+2023-06-09 13:59:52,938 INFO o.s.d.r.c.RepositoryConfigurationDelegate [main] Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2023-06-09 13:59:53,038 INFO o.s.d.r.c.RepositoryConfigurationDelegate [main] Finished Spring Data repository scanning in 89 ms. Found 5 JPA repository interfaces.
+2023-06-09 13:59:53,960 INFO o.s.b.w.e.t.TomcatWebServer [main] Tomcat initialized with port(s): 8081 (http)
+2023-06-09 13:59:53,982 INFO o.a.j.l.DirectJDKLog [main] Initializing ProtocolHandler ["http-nio-8081"]
+2023-06-09 13:59:53,984 INFO o.a.j.l.DirectJDKLog [main] Starting service [Tomcat]
+2023-06-09 13:59:53,984 INFO o.a.j.l.DirectJDKLog [main] Starting Servlet engine: [Apache Tomcat/10.1.8]
+2023-06-09 13:59:54,133 INFO o.a.j.l.DirectJDKLog [main] Initializing Spring embedded WebApplicationContext
+2023-06-09 13:59:54,135 INFO o.s.b.w.s.c.ServletWebServerApplicationContext [main] Root WebApplicationContext: initialization completed in 2133 ms
+2023-06-09 13:59:54,339 INFO o.h.j.i.u.LogHelper [main] HHH000204: Processing PersistenceUnitInfo [name: default]
+2023-06-09 13:59:54,404 INFO o.h.Version [main] HHH000412: Hibernate ORM core version 6.1.7.Final
+2023-06-09 13:59:54,710 INFO c.z.h.HikariDataSource [main] HikariPool-1 - Starting...
+2023-06-09 13:59:55,068 INFO c.z.h.p.HikariPool [main] HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@1073c664
+2023-06-09 13:59:55,072 INFO c.z.h.HikariDataSource [main] HikariPool-1 - Start completed.
+2023-06-09 13:59:55,135 INFO o.h.e.j.d.i.DialectFactoryImpl [main] HHH000400: Using dialect: org.hibernate.dialect.MySQLDialect
+2023-06-09 13:59:56,318 INFO o.h.e.t.j.p.i.JtaPlatformInitiator [main] HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2023-06-09 13:59:56,328 INFO o.s.o.j.AbstractEntityManagerFactoryBean [main] Initialized JPA EntityManagerFactory for persistence unit 'default'
+2023-06-09 13:59:57,124 WARN o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration [main] spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2023-06-09 13:59:57,515 INFO o.s.s.w.DefaultSecurityFilterChain [main] Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@7305191e, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@159314ca, org.springframework.security.web.context.SecurityContextHolderFilter@5b7d5eca, org.springframework.security.web.header.HeaderWriterFilter@6f6998b6, org.springframework.web.filter.CorsFilter@bafc754, org.springframework.security.web.authentication.logout.LogoutFilter@6d71f296, com.proyect.apiequipo.security.jwt.JwtAuthenticationFilter@63e40188, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@4ed74d03, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@76055d02, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@5e8684a3, org.springframework.security.web.session.SessionManagementFilter@6ddc817f, org.springframework.security.web.access.ExceptionTranslationFilter@1dcc0bb8, org.springframework.security.web.access.intercept.AuthorizationFilter@342a5b57]
+2023-06-09 13:59:57,534 WARN o.s.s.c.a.w.b.WebSecurity [main] You are asking Spring Security to ignore Mvc [pattern='/jugadores/**']. This is not recommended -- please use permitAll via HttpSecurity#authorizeHttpRequests instead.
+2023-06-09 13:59:57,534 INFO o.s.s.w.DefaultSecurityFilterChain [main] Will not secure Mvc [pattern='/jugadores/**']
+2023-06-09 13:59:57,535 WARN o.s.s.c.a.w.b.WebSecurity [main] You are asking Spring Security to ignore Mvc [pattern='/auth/register']. This is not recommended -- please use permitAll via HttpSecurity#authorizeHttpRequests instead.
+2023-06-09 13:59:57,536 INFO o.s.s.w.DefaultSecurityFilterChain [main] Will not secure Mvc [pattern='/auth/register']
+2023-06-09 13:59:57,536 WARN o.s.s.c.a.w.b.WebSecurity [main] You are asking Spring Security to ignore Mvc [pattern='/auth/login']. This is not recommended -- please use permitAll via HttpSecurity#authorizeHttpRequests instead.
+2023-06-09 13:59:57,537 INFO o.s.s.w.DefaultSecurityFilterChain [main] Will not secure Mvc [pattern='/auth/login']
+2023-06-09 13:59:57,538 WARN o.s.s.c.a.w.b.WebSecurity [main] You are asking Spring Security to ignore Mvc [pattern='/convocados/**']. This is not recommended -- please use permitAll via HttpSecurity#authorizeHttpRequests instead.
+2023-06-09 13:59:57,538 INFO o.s.s.w.DefaultSecurityFilterChain [main] Will not secure Mvc [pattern='/convocados/**']
+2023-06-09 13:59:57,538 WARN o.s.s.c.a.w.b.WebSecurity [main] You are asking Spring Security to ignore Mvc [pattern='/partidos/**']. This is not recommended -- please use permitAll via HttpSecurity#authorizeHttpRequests instead.
+2023-06-09 13:59:57,539 INFO o.s.s.w.DefaultSecurityFilterChain [main] Will not secure Mvc [pattern='/partidos/**']
+2023-06-09 13:59:57,539 WARN o.s.s.c.a.w.b.WebSecurity [main] You are asking Spring Security to ignore Mvc [pattern='/equipos/**']. This is not recommended -- please use permitAll via HttpSecurity#authorizeHttpRequests instead.
+2023-06-09 13:59:57,539 INFO o.s.s.w.DefaultSecurityFilterChain [main] Will not secure Mvc [pattern='/equipos/**']
+2023-06-09 13:59:57,808 INFO o.a.j.l.DirectJDKLog [main] Starting ProtocolHandler ["http-nio-8081"]
+2023-06-09 13:59:57,847 INFO o.s.b.w.e.t.TomcatWebServer [main] Tomcat started on port(s): 8081 (http) with context path ''
+2023-06-09 13:59:57,867 INFO o.s.b.StartupInfoLogger [main] Started ApiequipoApplication in 6.551 seconds (process running for 6.997)
+2023-06-09 14:00:05,041 INFO o.a.j.l.DirectJDKLog [http-nio-8081-exec-2] Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-06-09 14:00:05,043 INFO o.s.w.s.FrameworkServlet [http-nio-8081-exec-2] Initializing Servlet 'dispatcherServlet'
+2023-06-09 14:00:05,045 INFO o.s.w.s.FrameworkServlet [http-nio-8081-exec-2] Completed initialization in 2 ms
+2023-06-09 14:00:05,157 INFO c.p.a.s.j.JwtProvider [http-nio-8081-exec-2] Error con el token JWT signature does not match locally computed signature. JWT validity cannot be asserted and should not be trusted.
+2023-06-09 14:03:34,029 INFO o.s.b.StartupInfoLogger [main] Starting ApiequipoApplication using Java 17.0.6 with PID 1368 (C:\Users\leoni\Desktop\José\2ºDAM\ProyectoFinal\apiequipo\target\classes started by leoni in C:\Users\leoni\Desktop\José\2ºDAM\ProyectoFinal\apiequipo)
+2023-06-09 14:03:34,033 INFO o.s.b.SpringApplication [main] No active profile set, falling back to 1 default profile: "default"
+2023-06-09 14:03:34,932 INFO o.s.d.r.c.RepositoryConfigurationDelegate [main] Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2023-06-09 14:03:35,038 INFO o.s.d.r.c.RepositoryConfigurationDelegate [main] Finished Spring Data repository scanning in 91 ms. Found 5 JPA repository interfaces.
+2023-06-09 14:03:35,873 INFO o.s.b.w.e.t.TomcatWebServer [main] Tomcat initialized with port(s): 8081 (http)
+2023-06-09 14:03:35,883 INFO o.a.j.l.DirectJDKLog [main] Initializing ProtocolHandler ["http-nio-8081"]
+2023-06-09 14:03:35,885 INFO o.a.j.l.DirectJDKLog [main] Starting service [Tomcat]
+2023-06-09 14:03:35,885 INFO o.a.j.l.DirectJDKLog [main] Starting Servlet engine: [Apache Tomcat/10.1.8]
+2023-06-09 14:03:36,046 INFO o.a.j.l.DirectJDKLog [main] Initializing Spring embedded WebApplicationContext
+2023-06-09 14:03:36,048 INFO o.s.b.w.s.c.ServletWebServerApplicationContext [main] Root WebApplicationContext: initialization completed in 1952 ms
+2023-06-09 14:03:36,293 INFO o.h.j.i.u.LogHelper [main] HHH000204: Processing PersistenceUnitInfo [name: default]
+2023-06-09 14:03:36,355 INFO o.h.Version [main] HHH000412: Hibernate ORM core version 6.1.7.Final
+2023-06-09 14:03:36,615 INFO c.z.h.HikariDataSource [main] HikariPool-1 - Starting...
+2023-06-09 14:03:37,028 INFO c.z.h.p.HikariPool [main] HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@fd4459b
+2023-06-09 14:03:37,032 INFO c.z.h.HikariDataSource [main] HikariPool-1 - Start completed.
+2023-06-09 14:03:37,100 INFO o.h.e.j.d.i.DialectFactoryImpl [main] HHH000400: Using dialect: org.hibernate.dialect.MySQLDialect
+2023-06-09 14:03:38,206 INFO o.h.e.t.j.p.i.JtaPlatformInitiator [main] HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2023-06-09 14:03:38,214 INFO o.s.o.j.AbstractEntityManagerFactoryBean [main] Initialized JPA EntityManagerFactory for persistence unit 'default'
+2023-06-09 14:03:38,895 WARN o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration [main] spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2023-06-09 14:03:39,241 INFO o.s.s.w.DefaultSecurityFilterChain [main] Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@342a5b57, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@5e781b4f, org.springframework.security.web.context.SecurityContextHolderFilter@6ddc817f, org.springframework.security.web.header.HeaderWriterFilter@2f541f60, org.springframework.web.filter.CorsFilter@1b89debc, org.springframework.security.web.authentication.logout.LogoutFilter@518ed9b4, com.proyect.apiequipo.security.jwt.JwtAuthenticationFilter@5a08d301, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@78c91d2a, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@7ec729be, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@7305191e, org.springframework.security.web.session.SessionManagementFilter@401b7226, org.springframework.security.web.access.ExceptionTranslationFilter@2b33f7a0, org.springframework.security.web.access.intercept.AuthorizationFilter@110f66e3]
+2023-06-09 14:03:39,260 WARN o.s.s.c.a.w.b.WebSecurity [main] You are asking Spring Security to ignore Mvc [pattern='/jugadores/**']. This is not recommended -- please use permitAll via HttpSecurity#authorizeHttpRequests instead.
+2023-06-09 14:03:39,260 INFO o.s.s.w.DefaultSecurityFilterChain [main] Will not secure Mvc [pattern='/jugadores/**']
+2023-06-09 14:03:39,260 WARN o.s.s.c.a.w.b.WebSecurity [main] You are asking Spring Security to ignore Mvc [pattern='/auth/register']. This is not recommended -- please use permitAll via HttpSecurity#authorizeHttpRequests instead.
+2023-06-09 14:03:39,262 INFO o.s.s.w.DefaultSecurityFilterChain [main] Will not secure Mvc [pattern='/auth/register']
+2023-06-09 14:03:39,262 WARN o.s.s.c.a.w.b.WebSecurity [main] You are asking Spring Security to ignore Mvc [pattern='/auth/login']. This is not recommended -- please use permitAll via HttpSecurity#authorizeHttpRequests instead.
+2023-06-09 14:03:39,262 INFO o.s.s.w.DefaultSecurityFilterChain [main] Will not secure Mvc [pattern='/auth/login']
+2023-06-09 14:03:39,262 WARN o.s.s.c.a.w.b.WebSecurity [main] You are asking Spring Security to ignore Mvc [pattern='/convocados/**']. This is not recommended -- please use permitAll via HttpSecurity#authorizeHttpRequests instead.
+2023-06-09 14:03:39,262 INFO o.s.s.w.DefaultSecurityFilterChain [main] Will not secure Mvc [pattern='/convocados/**']
+2023-06-09 14:03:39,263 WARN o.s.s.c.a.w.b.WebSecurity [main] You are asking Spring Security to ignore Mvc [pattern='/partidos/**']. This is not recommended -- please use permitAll via HttpSecurity#authorizeHttpRequests instead.
+2023-06-09 14:03:39,263 INFO o.s.s.w.DefaultSecurityFilterChain [main] Will not secure Mvc [pattern='/partidos/**']
+2023-06-09 14:03:39,263 WARN o.s.s.c.a.w.b.WebSecurity [main] You are asking Spring Security to ignore Mvc [pattern='/equipos/**']. This is not recommended -- please use permitAll via HttpSecurity#authorizeHttpRequests instead.
+2023-06-09 14:03:39,263 INFO o.s.s.w.DefaultSecurityFilterChain [main] Will not secure Mvc [pattern='/equipos/**']
+2023-06-09 14:03:39,517 INFO o.a.j.l.DirectJDKLog [main] Starting ProtocolHandler ["http-nio-8081"]
+2023-06-09 14:03:39,551 INFO o.s.b.w.e.t.TomcatWebServer [main] Tomcat started on port(s): 8081 (http) with context path ''
+2023-06-09 14:03:39,563 INFO o.s.b.StartupInfoLogger [main] Started ApiequipoApplication in 6.099 seconds (process running for 6.547)
+2023-06-09 14:05:15,081 INFO o.a.j.l.DirectJDKLog [http-nio-8081-exec-1] Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-06-09 14:05:15,084 INFO o.s.w.s.FrameworkServlet [http-nio-8081-exec-1] Initializing Servlet 'dispatcherServlet'
+2023-06-09 14:05:15,087 INFO o.s.w.s.FrameworkServlet [http-nio-8081-exec-1] Completed initialization in 3 ms
+2023-06-09 14:05:15,406 INFO c.p.a.c.JugadorController [http-nio-8081-exec-2] Inicio getJugadores
+2023-06-09 14:05:15,515 INFO c.p.a.c.JugadorController [http-nio-8081-exec-2] Fin getJugadores
+2023-06-09 14:05:17,373 INFO c.p.a.c.JugadorController [http-nio-8081-exec-4] Inicio getJugadorPorId
+2023-06-09 14:05:17,385 INFO c.p.a.c.JugadorController [http-nio-8081-exec-4] Fin getJugadorPorId
+2023-06-09 14:05:26,045 INFO c.p.a.c.JugadorController [http-nio-8081-exec-8] Inicio getJugadores
+2023-06-09 14:05:26,065 INFO c.p.a.c.JugadorController [http-nio-8081-exec-8] Fin getJugadores
+2023-06-09 15:17:40,653 INFO c.p.a.c.JugadorController [http-nio-8081-exec-1] Inicio getJugadores
+2023-06-09 15:17:40,685 INFO c.p.a.c.JugadorController [http-nio-8081-exec-1] Fin getJugadores
+2023-06-09 15:32:50,403 INFO c.p.a.c.PartidoController [http-nio-8081-exec-3] Inicio getPartidos
+2023-06-09 15:32:50,522 INFO c.p.a.c.PartidoController [http-nio-8081-exec-3] Fin getPartidos
